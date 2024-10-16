@@ -14,5 +14,7 @@ public class User extends BaseModel{
     private String email;
     @OneToMany(mappedBy = "usr")
     private List<Address> addresses;
+    @OneToMany
+    private List<Order> orders;
 }
 

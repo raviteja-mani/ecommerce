@@ -1,12 +1,10 @@
 package com.ravi.ecommerce.services;
 
 import com.ravi.ecommerce.exceptions.ProductNotFoundException;
+import com.ravi.ecommerce.exceptions.UserNotFoundException;
 import com.ravi.ecommerce.libraries.SendGridAdapter;
 import com.ravi.ecommerce.libraries.modals.EmailSendGridAdapter;
-import com.ravi.ecommerce.models.Inventory;
-import com.ravi.ecommerce.models.Notification;
-import com.ravi.ecommerce.models.NotificationStatus;
-import com.ravi.ecommerce.models.Product;
+import com.ravi.ecommerce.models.*;
 import com.ravi.ecommerce.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -52,4 +50,17 @@ public class InventoryServiceImpl implements InventoryService{
                 }
         return this.inventoryRepository.save(inventory);
     }
+
+//    @Override
+//    public void deleteInventory( int productId)  {
+//        Optional optUser = userRepository.findById(userId);
+//        if(optUser.isEmpty()){
+//            throw new UserNotFoundException("sdf");
+//        }
+//        User usr = (User) optUser.get();
+//        if(!usr.getUserType().equals(UserType.ADMIN)){
+//            throw new UnAuthorizedAccessException("sdfs");
+//        }
+//        inventoryRepository.deleteById(productId);
+//    }
 }
