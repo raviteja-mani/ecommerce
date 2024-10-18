@@ -10,6 +10,8 @@ import java.util.List;
 public class Order extends BaseModel{
     @ManyToOne
     private User user;
+    @OneToOne
+    private Address deliveryAddress;
     @OneToMany
     private List<OrderDetail> orderDetails;
     @Enumerated(EnumType.STRING)

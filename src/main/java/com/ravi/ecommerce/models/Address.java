@@ -20,7 +20,6 @@ public class Address extends BaseModel{
     private double latitude;
     private double longitude;
     @ManyToOne
-    @JoinColumn(name = "usr_id")
-    private User usr;
+    private User user;
 }
 
