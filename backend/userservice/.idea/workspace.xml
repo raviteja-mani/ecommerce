@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14c23448-c56b-4614-adb9-b0e3a88b2fd3" name="Changes" comment="" />
+    <list default="true" id="14c23448-c56b-4614-adb9-b0e3a88b2fd3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/Exceptions/InvalidCategorysException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/Exceptions/MandatoryFieldMissingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/Exceptions/ProductNotFountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/controllers/ProductServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/converters/StringListConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/model/BaseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/repositories/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/requestdtos/ProductCreateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../productservice/src/main/java/com/rvtjakula/productservice/services/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/securityconfigs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/securityconfigs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authservice/src/main/java/com/rvtjakula/authservice/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -30,9 +52,11 @@
     "Application.Unnamed.executor": "Run",
     "Maven.userservice [clean,package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Mywork/ecommerce2/userservice"
+    "last_opened_file_path": "C:/Users/User/Mywork/ecommerce/backend/ECommerceApplication"
   }
 }]]></component>
   <component name="RunManager">
