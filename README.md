@@ -1,1 +1,1 @@
-E-commerce Full stack Application
+E-commerce Application following Microservices Architechture
