@@ -8,7 +8,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
+import lombok.Getter;
 
+@Getter
 @Entity
 @Table(name = "`authorizationConsent`")
 @IdClass(AuthorizationConsent.AuthorizationConsentId.class)
@@ -20,27 +22,15 @@ public class AuthorizationConsent {
 	@Column(length = 1000)
 	private String authorities;
 
-	public String getRegisteredClientId() {
-		return registeredClientId;
-	}
-
-	public void setRegisteredClientId(String registeredClientId) {
+    public void setRegisteredClientId(String registeredClientId) {
 		this.registeredClientId = registeredClientId;
 	}
 
-	public String getPrincipalName() {
-		return principalName;
-	}
-
-	public void setPrincipalName(String principalName) {
+    public void setPrincipalName(String principalName) {
 		this.principalName = principalName;
 	}
 
-	public String getAuthorities() {
-		return authorities;
-	}
-
-	public void setAuthorities(String authorities) {
+    public void setAuthorities(String authorities) {
 		this.authorities = authorities;
 	}
 

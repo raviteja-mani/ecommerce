@@ -1,14 +1,21 @@
 package com.rvtjakula.authservice.security.services;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.rvtjakula.authservice.models.Role;
 import com.rvtjakula.authservice.models.User;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+@JsonDeserialize
+@NoArgsConstructor
+@Getter
+@Setter
 public class CustomUserDetails implements UserDetails  {
     private String password;
     private String username;

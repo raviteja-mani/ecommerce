@@ -14,6 +14,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.server.authorization.OAuth2TokenType;
@@ -70,14 +71,16 @@ public class SecurityConfig {
             throws Exception {
         http
                 .authorizeHttpRequests((authorize) -> authorize
-                        .anyRequest().permitAll()
+                        .requestMatchers("/users/register").permitAll()
+                        .anyRequest().authenticated()
                 )
                 .cors(AbstractHttpConfigurer::disable)
-                .csrf(AbstractHttpConfigurer::disable);
+                .csrf(AbstractHttpConfigurer::disable)
                 // Form login handles the redirect to the login page from the
                 // authorization server filter chain
-//                .formLogin(Customizer.withDefaults());
-
+                .formLogin(Customizer.withDefaults());
+//                .oauth2ResourceServer((resourceServer) -> resourceServer
+//                .jwt(Customizer.withDefaults()));
         return http.build();
     }
 

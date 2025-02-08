@@ -1,15 +1,18 @@
 package com.rvtjakula.authservice.security.services;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.rvtjakula.authservice.models.User;
 import com.rvtjakula.authservice.repositories.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Component
+@Service
+@JsonDeserialize
 public class CustomUserDetailsService implements UserDetailsService  {
     private UserRepository userRepository;
 

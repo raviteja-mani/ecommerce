@@ -53,6 +53,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
@@ -81,19 +85,19 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
-<!--			<plugin>-->
-<!--				<groupId>org.springframework.boot</groupId>-->
-<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--				<configuration>-->
-<!--					<excludes>-->
-<!--						<exclude>-->
-<!--							<groupId>org.projectlombok</groupId>-->
-<!--							<artifactId>lombok</artifactId>-->
-<!--							<version>${lombok.version}</version>-->
-<!--						</exclude>-->
-<!--					</excludes>-->
-<!--				</configuration>-->
-<!--			</plugin>-->
+			<!--			<plugin>-->
+			<!--				<groupId>org.springframework.boot</groupId>-->
+			<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+			<!--				<configuration>-->
+			<!--					<excludes>-->
+			<!--						<exclude>-->
+			<!--							<groupId>org.projectlombok</groupId>-->
+			<!--							<artifactId>lombok</artifactId>-->
+			<!--							<version>${lombok.version}</version>-->
+			<!--						</exclude>-->
+			<!--					</excludes>-->
+			<!--				</configuration>-->
+			<!--			</plugin>-->
 		</plugins>
 	</build>
 

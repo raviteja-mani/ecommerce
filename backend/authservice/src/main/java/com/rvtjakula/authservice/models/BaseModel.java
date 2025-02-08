@@ -12,7 +12,6 @@ import java.util.Date;
 @Getter
 @Setter
 @MappedSuperclass
-@EntityListeners(AuditingEntityListener.class)
 public class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
